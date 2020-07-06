@@ -57,6 +57,10 @@ Related
 History Log
 =============
 
+- 1.14.1 -- 2020-07-06
+
+    - fix functional typo   
+    
 - 1.14.0 -- 2020-07-06
 
     - update to accommodate new Light_Realist action -> _action evolution   

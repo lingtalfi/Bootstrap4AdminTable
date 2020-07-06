@@ -245,7 +245,7 @@ class Bootstrap4AdminTableRenderer extends OpenAdminTableBaseRealistListRenderer
                                     $type = $this->getDataType($colName);
                                     ?>
                                     <th scope="col">
-                                        <?php if ('_action' !== $type): ?>
+                                        <?php if ('action' !== $type): ?>
 
                                             <?php if (true === $this->isWidgetEnabled("head_sort")): ?>
 

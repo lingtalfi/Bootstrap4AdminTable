@@ -63,7 +63,7 @@ class NeckFiltersRendererWidget extends AbstractOpenAdminTableRendererWidget imp
                 <td></td>
             <?php endif; ?>
             <?php foreach ($this->columns2DataTypes as $columnName => $dataType): ?>
-                <?php if ('_action' !== $dataType): ?>
+                <?php if ('action' !== $dataType): ?>
 
                     <td>
                         <div class="d-flex oath-filter-container rtt-emitter" data-rtt-tag="generic_sub_filter"
