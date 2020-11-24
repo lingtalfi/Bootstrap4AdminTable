@@ -56,6 +56,7 @@ class ToolbarRendererWidget extends AbstractRendererWidget implements ToolbarRen
 
                 $groupCpt = 1;
                 $max = count($this->groups);
+
                 foreach ($this->groups as $item):
 
                     $actionId = $item['action_id'] ?? null;
@@ -96,6 +97,9 @@ class ToolbarRendererWidget extends AbstractRendererWidget implements ToolbarRen
                          aria-label="group <?php echo $groupCpt; ?>">
                         <?php if (false === $hasChildren): ?>
                             <button type="button" class="btn btn-light border lah-button"
+                                <?php if (null !== $icon): ?>
+                                    title="<?php echo htmlspecialchars($text); ?>"
+                                <?php endif; ?>
                                     data-action-id="<?php echo htmlspecialchars($actionId); ?>"
                                 <?php if ($attr): ?>
                                     <?php echo StringTool::htmlAttributes($attr); ?>
@@ -106,19 +110,24 @@ class ToolbarRendererWidget extends AbstractRendererWidget implements ToolbarRen
                             >
                                 <?php if (null !== $icon): ?>
                                     <i class="<?php echo htmlspecialchars($icon); ?>"></i>
+                                <?php else: ?>
+                                    <?php echo $text; ?>
                                 <?php endif; ?>
-                                <?php echo $text; ?>
                             </button>
                         <?php else:
                             $cssId = StringTool::getUniqueCssId("bsat-toolbar-");
                             ?>
                             <button id="<?php echo $cssId; ?>" type="button"
+                                <?php if (null !== $icon): ?>
+                                    title="<?php echo htmlspecialchars($text); ?>"
+                                <?php endif; ?>
                                     class="btn btn-light border dropdown-toggle"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <?php if (null !== $icon): ?>
                                     <i class="<?php echo htmlspecialchars($icon); ?>"></i>
+                                <?php else: ?>
+                                    <?php echo $text; ?>
                                 <?php endif; ?>
-                                <?php echo $text; ?>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="<?php echo $cssId; ?>">
                                 <?php
