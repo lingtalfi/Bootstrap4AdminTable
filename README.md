@@ -57,6 +57,10 @@ Related
 History Log
 =============
 
+- 1.15.2 -- 2020-11-24
+
+    - update Bootstrap4AdminTableRenderer->render, now cleans the master checkbox after any realist request  
+    
 - 1.15.1 -- 2020-11-24
 
     - update ToolbarRendererWidget, now renders more compact buttons    
