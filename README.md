@@ -57,6 +57,10 @@ Related
 History Log
 =============
 
+- 1.15.3 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.15.2 -- 2020-11-24
 
     - update Bootstrap4AdminTableRenderer->render, now cleans the master checkbox after any realist request  
