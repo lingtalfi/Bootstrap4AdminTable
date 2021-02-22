@@ -1,6 +1,6 @@
 Bootstrap4AdminTable
 ===========
-2019-08-15 -> 2020-11-24
+2019-08-15 -> 2021-02-22
 
 
 
@@ -57,9 +57,13 @@ Related
 History Log
 =============
 
+- 1.15.5 -- 2021-02-22
+
+    - adapt to new light universe assets organization
+  
 - 1.15.4 -- 2020-12-08
 
-    - Fix lpi-deps not using natsort.
+    - Fix lpi-deps not using natsort
 
 - 1.15.3 -- 2020-12-04
 
