@@ -1,6 +1,6 @@
 Bootstrap4AdminTable
 ===========
-2019-08-15 -> 2021-02-22
+2019-08-15 -> 2021-02-23
 
 
 
@@ -57,6 +57,10 @@ Related
 History Log
 =============
 
+- 1.15.6 -- 2021-02-23
+
+    - checkpoint commit for dependency update
+  
 - 1.15.5 -- 2021-02-22
 
     - adapt to new light universe assets organization
