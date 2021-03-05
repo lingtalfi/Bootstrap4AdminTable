@@ -4,7 +4,7 @@
 
 The GlobalSearchRendererWidget class
 ================
-2019-08-15 --> 2021-02-23
+2019-08-15 --> 2021-03-05
 
 
 
